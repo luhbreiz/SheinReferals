@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Button Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <input type="text" id="referralCode" class="text-input" placeholder="Enter your Shein referral code...">
+        <button class="button-33" id="submitButton" onclick="submitReferral()">Get Users</button>
+    </div>
+
+    <!-- Success Message Popup -->
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div class="success-message">
+                <h2>Success!</h2>
+                <p>Your action was successful.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Message Popup -->
+    <div id="errorPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeErrorPopup()">&times;</span>
+            <div class="error-message">
+                <img src="https://cdn0.iconfinder.com/data/icons/shift-interfaces/32/Error-512.png" alt="Error" class="error-icon">
+                <h2>Invalid Shein Referral Code</h2>
+                <p>Please enter your code in the text box.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
